@@ -13,28 +13,27 @@
 
 
 <body class="text-center d-flex flex-column min-vh-100">
-<main>
-    <div class="container-fluid">
-        <div class="container-sm p-6 mt-6">
-            <div class="row">
-                <div class="col">
-                    <h3>Test 1</h3>
-                  <svg id="barcode1"></svg>
-                </div>
-                
-                <div class="col">
-                    <h3>Test 2</h3>
-                  <svg id="barcode2"></svg>
+    <main>
+        <div class="container-fluid">
+            <div class="container-sm p-6 mt-6">
+                <div class="row">
+                    <div class="col">
+                        <h3>Test 1</h3>
+                      <svg id="barcode1"></svg>
+                    </div>
+                    
+                    <div class="col">
+                        <h3>Test 2</h3>
+                      <svg id="barcode2"></svg>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</main>
+    </main>
     
-  <script>
+    <script>
       JsBarcode("#barcode1", "8712800145257", {format: "ean13"});
       JsBarcode("#barcode2", "8710506039085", {format: "ean13"});
-  </script>
-
+    </script>
 </body>
 </html>
