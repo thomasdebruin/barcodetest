@@ -10,7 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/JsBarcode.all.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
   <script>
-      JsBarcode("#ean-13", "8712800149999", {format: "ean13"});
+      JsBarcode("#barcode1", "8712800145257", {format: "ean13"});
+      JsBarcode("#barcode2", "8710506039085", {format: "ean13"});
   </script>
 </head>
 
@@ -21,7 +22,11 @@
         <div class="container-sm p-6 mt-6">
             <div class="row">
                 <div class="col">
-                  <svg id="barcode"></svg>
+                  <svg id="barcode1"></svg>
+                </div>
+                
+                <div class="col">
+                  <svg id="barcode2"></svg>
                 </div>
             </div>
         </div>
