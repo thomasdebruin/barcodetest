@@ -9,10 +9,6 @@
     <title>Barcode Test</title>
     <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/JsBarcode.all.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-      JsBarcode("#barcode1", "8712800145257", {format: "ean13"});
-      JsBarcode("#barcode2", "8710506039085", {format: "ean13"});
-  </script>
 </head>
 
 
@@ -32,6 +28,11 @@
         </div>
     </div>
 </main>
+    
+  <script>
+      JsBarcode("#barcode1", "8712800145257", {format: "ean13"});
+      JsBarcode("#barcode2", "8710506039085", {format: "ean13"});
+  </script>
 
 </body>
 </html>
