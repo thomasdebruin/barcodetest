@@ -8,24 +8,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Barcode Test</title>
     <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/JsBarcode.all.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 
 <body class="text-center d-flex flex-column min-vh-100">
     <main>
-        <div class="container-fluid">
-            <div class="container-sm p-6 mt-6">
-                <div class="row">
-                    <div class="col">
-                        <h3>Test 1</h3>
-                      <svg id="barcode1"></svg>
-                    </div>
-                    
-                    <div class="col">
-                        <h3>Test 2</h3>
-                      <svg id="barcode2"></svg>
-                    </div>
+        <div class="container-sm max-w-96 mx-auto p-6 mt-6">
+            <div class="row">
+                <div class="col my-12">
+                    <a class="text-blue-600 underline" href="https://www.nvwa.nl/documenten/waarschuwingen/2024/12/17/veiligheidswaarschuwing-campina-echte-slagroom">waarschuwing</a>
+                    <h3>Spuitbus Campina Echte Slagroom 250</h3>
+                    <svg class="block mx-auto" id="barcode1"></svg>
+                </div>
+                
+                <div class="col my-12">
+                    <a class="text-blue-600 underline" href="https://www.nvwa.nl/documenten/waarschuwingen/2024/11/20/veiligheidswaarschuwing-johma-farmersalade-175-gram">waarschuwing</a>
+                    <h3>Johma Farmersalade</h3>
+                    <svg class="block mx-auto" id="barcode2"></svg>
+                </div>
+                
+                <div class="col my-12">
+                    <h3>Liga Evergreen Krenten XL</h3>
+                    <a class="text-blue-600 underline" href="https://www.nvwa.nl/documenten/waarschuwingen/2024/11/16/veiligheidswaarschuwing-liga-evergreen-crunchy-muesli-chocolade">waarschuwing</a>
+                    <svg class="block mx-auto" id="barcode3"></svg>
                 </div>
             </div>
         </div>
@@ -34,6 +41,7 @@
     <script>
       JsBarcode("#barcode1", "8712800145257", {format: "ean13"});
       JsBarcode("#barcode2", "8710506039085", {format: "ean13"});
+      JsBarcode("#barcode3", "7622210651785", {format: "ean13"});
     </script>
 </body>
 </html>
